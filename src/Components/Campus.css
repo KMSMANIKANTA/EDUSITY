@@ -1,0 +1,37 @@
+.gallery{
+  width:100%;
+  padding:10px 10%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.gallery img{
+  width:250px;
+  border-radius: 10px;
+  margin-top:15px;
+}
+@media  screen and (max-width:1000px) and (min-width:801px){
+  .gallery{
+    padding:10px 4%;
+    display:flex;
+    align-items: center;
+
+  }
+  .gallery img{
+    width:220px;
+  }
+}
+@media screen and (max-width:800px){
+  .gallery{
+    padding:5px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gallery img{
+    width:90%;
+  }
+}
