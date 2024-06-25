@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contact.css'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Title from './Title'
 import { CiMail } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -32,20 +35,22 @@ const Contact = () => {
       setResult(data.message);
     }
   };
-
+useEffect(()=>{
+  Aos.init({duration:2000,offset:200})
+})
   return (
     <>
        <Title title={'Contact Us'} subtitle={'Get in Touch'}></Title>
    
     <div className='contact'>
-      <div className="left">
+      <div className="left" data-aos='zoom-out'>
         <h2>Send us a message   <FaMailBulk className='icon1' /> </h2>
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
         <h4><CiMail className='icon'></CiMail> Contact@edusity.com</h4>
         <h4><FaPhoneAlt className='icon'></FaPhoneAlt> +1 123-456-7890</h4>
         <h4><IoLocation className='icon'></IoLocation> 77 Massachusetts Ave, Cambridge MA 02139, United States</h4>
       </div>
-      <div className="right">
+      <div className="right" data-aos='zoom-in'>
         <form className='forminput' onSubmit={onSubmit}>
           <label htmlFor="name">Your Name:</label>
           <input type="text" placeholder='enter your name' required name='name' />

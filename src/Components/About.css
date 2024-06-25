@@ -17,6 +17,7 @@
 .about-right{
   flex-basis: 56%;
   display: flex;
+  min-height: 500px;
   flex-direction: column;
   justify-content: space-evenly;
 }
