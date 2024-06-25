@@ -34,7 +34,7 @@ const Navbar = () => {
         }} data-aos='zoom-in'>Campus</Link></li>
         <li className='last' data-aos='zoom-in'><Link to='contact' smooth duration={1000} offset={-200}  onClick={()=>{
           setToggle(!toggle)
-        }} data-aos='zoom-in'>Contact</Link></li>
+        }} data-aos='zoom-in'>Contactt</Link></li>
         
       </ul>
       <div className='toggle' onClick={()=>{
