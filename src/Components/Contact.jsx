@@ -43,7 +43,7 @@ useEffect(()=>{
        <Title title={'Contact Us'} subtitle={'Get in Touch'}></Title>
    
     <div className='contact'>
-      <div className="left" data-aos='zoom-out'>
+      <div className="left" data-aos='fade-left'>
         <h2>Send us a message   <FaMailBulk className='icon1' /> </h2>
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
         <h4><CiMail className='icon'></CiMail> Contact@edusity.com</h4>
