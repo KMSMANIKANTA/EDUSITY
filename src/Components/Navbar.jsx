@@ -28,7 +28,7 @@ const Navbar = () => {
         }} data-aos='zoom-in'>Program</Link></li>
         <li><Link to='about' smooth offset={-100} duration={1000}  onClick={()=>{
           setToggle(!toggle)
-        }} data-aos='zoom-in'>About Us</Link></li>
+        }} data-aos='zoom-in'>About</Link></li>
         <li><Link to='gallery' smooth offset={-200} duration={1000}  onClick={()=>{
           setToggle(!toggle)
         }} data-aos='zoom-in'>Campus</Link></li>
